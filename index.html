@@ -3,26 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>codex-pruebas</title>
+    <title>Nuevo Mexico Inmobiliaria | Bienes Raíces Veracruz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 20px;
-            right: 20px;
-            z-index: 100;
-        }
-        .whatsapp-float img {
-            width: 100%;
-            height: 100%;
-        }
+        body { font-family: 'Montserrat', sans-serif; background-color: #FFFFFF; color: #1A3059; }
+        .text-navy { color: #1A3059; }
+        .bg-navy { background-color: #1A3059; }
+        .text-cyan { color: #009FE3; }
+        .bg-cyan { background-color: #009FE3; }
+        .border-cyan { border-color: #009FE3; }
     </style>
 </head>
-<body>
-    <h1>Bienvenido a codex-pruebas</h1>
-    <a href="https://wa.me/2294773778" class="whatsapp-float" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"/>
-    </a>
+<body class="antialiased">
+
+    <nav class="bg-navy p-4 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="h-10 w-10 flex items-center justify-center border border-white p-1 rounded-full text-xs font-bold text-cyan">
+                    [LGO]
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold tracking-wider">NUEVO MEXICO</span>
+                    <span class="text-[0.6rem] tracking-[0.3em] font-light -mt-1 text-cyan/90">INMOBILIARIA</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="#hero" class="hover:text-cyan transition">Inicio</a>
+                <a href="#zonas" class="hover:text-cyan transition">Zonas</a>
+                <a href="#nosotros" class="hover:text-cyan transition">Nosotros</a>
+                <a href="#contacto" class="bg-cyan px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider hover:bg-white hover:text-navy transition shadow">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="py-24 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <span class="text-xs font-bold uppercase tracking-widest text-cyan mb-3 block">Expertos en Bienes Raíces Veracruzanos</span>
+            <h1 class="text-4xl md:text-6xl font-black text-navy leading-tight mb-6">Tu hogar ideal en Veracruz, <span class="text-cyan">con la confianza de los expertos.</span></h1>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-12">Nuevo Mexico Inmobiliaria combina la modernidad de nuestro servicio con el profundo conocimiento de nuestra herencia regional. Compra, vende o renta con total seguridad jurídica.</p>
+            <div class="flex items-center justify-center gap-4">
+                <a href="#contacto" class="bg-navy px-8 py-4 rounded-xl font-bold text-white hover:bg-cyan transition shadow-lg">Solicitar una Asesoría</a>
+                <a href="#zonas" class="text-navy font-semibold hover:text-cyan group">
+                    Ver Zonas de Cobertura <span class="group-hover:translate-x-1 inline-block transition-transform">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="zonas" class="py-20 bg-gray-50/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-navy mb-4">Dominamos el Mercado Local</h2>
+                <p class="text-gray-600 max-w-xl mx-auto">Conocemos cada rincón de la región Veracruzana para ofrecerte las mejores oportunidades.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center">
+                    <div class="text-4xl text-cyan mb-4">☀️</div>
+                    <h3 class="font-bold text-lg text-navy">Heroica Veracruz</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center">
+                    <div class="text-4xl text-cyan mb-4">🌊</div>
+                    <h3 class="font-bold text-lg text-navy">Boca del Río</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center">
+                    <div class="text-4xl text-cyan mb-4">🌴</div>
+                    <h3 class="font-bold text-lg text-navy">Medellín de Bravo</h3>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center">
+                    <div class="text-4xl text-cyan mb-4">⛵</div>
+                    <h3 class="font-bold text-lg text-navy">Alvarado</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-24 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="bg-cyan/10 text-cyan text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Nuestra Identidad</span>
+                <h2 class="text-3xl md:text-5xl font-black text-navy">Legado, Modernidad <span class="text-cyan">y Certeza.</span></h2>
+                <p class="text-gray-700 leading-relaxed">Nuestro logo no es casualidad. Representa el equilibrio entre la modernidad de las mejores estructuras arquitectónicas y la fuerza atemporal de nuestra herencia local (la serpiente). En Nuevo Mexico Inmobiliaria, te ofrecemos esa misma dualidad: un servicio inmobiliario moderno respaldado por una profunda ética profesional y seguridad jurídica.</p>
+                <div class="grid grid-cols-2 gap-4 pt-4 text-sm">
+                    <div class="border-l-4 border-cyan pl-4"><p class="font-semibold text-navy">Seguridad Jurídica</p><p class="text-gray-600">Trámites transparentes y seguros.</p></div>
+                    <div class="border-l-4 border-cyan pl-4"><p class="font-semibold text-navy">Servicio Dinámico</p><p class="text-gray-600">Atención ágil y moderna.</p></div>
+                </div>
+            </div>
+            <div class="h-96 w-full bg-navy/5 rounded-3xl border border-dashed border-gray-200 flex items-center justify-center text-gray-400 p-8">
+                [Espacio para una imagen profesional de la agencia o de Veracruz]
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 bg-gray-50 border-t border-gray-100">
+        <div class="container mx-auto px-6 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-5xl font-black text-navy mb-8">¿Listo para dar <span class="text-cyan">el siguiente paso?</span></h2>
+            <p class="text-gray-700 mb-12">Estamos aquí para escucharte y guiarte. Déjanos tus datos y un asesor certificado se pondrá en contacto contigo para una consulta gratuita.</p>
+            <form class="space-y-4 text-left">
+                <input type="text" placeholder="Tu Nombre Completo" class="w-full p-4 border border-gray-200 rounded-xl focus:border-cyan focus:ring-0">
+                <input type="email" placeholder="Correo Electrónico de Contacto" class="w-full p-4 border border-gray-200 rounded-xl focus:border-cyan focus:ring-0">
+                <textarea placeholder="Cuéntanos un poco sobre tus necesidades inmobiliarias" class="w-full p-4 border border-gray-200 rounded-xl h-32 focus:border-cyan focus:ring-0"></textarea>
+                <button type="submit" class="bg-cyan w-full p-4 rounded-xl font-bold text-white uppercase tracking-wider hover:bg-navy transition shadow-lg">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-navy p-12 text-white/70 text-sm">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <span class="text-xl font-bold text-white tracking-wider">NUEVO MEXICO</span><br>
+                <span class="text-[0.6rem] tracking-[0.3em] font-light -mt-1 text-cyan/90">INMOBILIARIA</span>
+            </div>
+            <p>© 2024 Nuevo Mexico Inmobiliaria. Todos los derechos reservados.<br>Asesoría profesional en Bienes Raíces Veracruzanos.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
